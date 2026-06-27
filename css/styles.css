@@ -764,9 +764,11 @@ body {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 200;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     animation: fadeInModal 0.3s ease-out;
 }
 
@@ -786,8 +788,8 @@ body {
     max-width: 420px;
     box-shadow: var(--shadow-active);
     border: 1px solid var(--border-gold);
-    overflow-y: auto;
-    max-height: 90vh;
+    max-height: none;
+    margin: 30px auto;
     animation: slideUp 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
@@ -1413,3 +1415,22 @@ body {
         padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 8px);
     }
 }
+
+/* Admin Subtabs & Appointments Styles */
+.status-badge.status-pending {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
+.status-badge.status-accepted {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+.status-badge.status-rejected {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+}
+.subtab-btn.active {
+    border-bottom: 2px solid var(--accent-pink-dark) !important;
+    color: var(--accent-pink-dark) !important;
+}
+

@@ -1,0 +1,35 @@
+[
+    {
+        "id_cita": "cita_6a3f54b6406f3",
+        "nombre_completo": "Maria Lopez",
+        "telefono": "866 111 2233",
+        "id_servicio": "tecnica_acrilico",
+        "nombre_servicio": "Uñas Acrílicas",
+        "fecha_cita": "2026-07-01",
+        "hora_cita": "10:00",
+        "estado": "Pendiente",
+        "creada_en": "2026-06-27 06:42:30"
+    },
+    {
+        "id_cita": "cita_6a3f5ba27639f",
+        "nombre_completo": "Rosalinda Cedillo Osornio",
+        "telefono": "8662047750",
+        "id_servicio": "tecnica_acrilico",
+        "nombre_servicio": "Uñas Acrílicas",
+        "fecha_cita": "2026-06-30",
+        "hora_cita": "14:11",
+        "estado": "Pendiente",
+        "creada_en": "2026-06-27 07:12:02"
+    },
+    {
+        "id_cita": "cita_6a3f6a91c13a1",
+        "nombre_completo": "Rosalinda Cedillo Osornio",
+        "telefono": "8662047750",
+        "id_servicio": "tecnica_acrilico",
+        "nombre_servicio": "Uñas Acrílicas",
+        "fecha_cita": "2026-07-01",
+        "hora_cita": "05:15",
+        "estado": "Pendiente",
+        "creada_en": "2026-06-27 08:15:45"
+    }
+]

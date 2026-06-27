@@ -1063,6 +1063,7 @@ window.openEditService = function(id) {
     document.getElementById('service-id').value = service.id;
     document.getElementById('service-name').value = service.name;
     document.getElementById('service-category').value = service.category;
+    document.getElementById('service-image').value = service.image || '';
     
     handleCategoryChange(service.category);
     
@@ -1335,6 +1336,7 @@ function setupEventListeners() {
         document.getElementById('modal-title').textContent = 'Agregar Servicio';
         document.getElementById('service-form').reset();
         document.getElementById('service-id').value = '';
+        document.getElementById('service-image').value = '';
         
         document.getElementById('lengths-list-container').innerHTML = '';
         document.getElementById('subservices-list-container').innerHTML = '';
@@ -1367,8 +1369,9 @@ function setupEventListeners() {
         const id = document.getElementById('service-id').value;
         const name = document.getElementById('service-name').value.trim();
         const category = document.getElementById('service-category').value;
+        const image = document.getElementById('service-image').value.trim();
         
-        let newServiceObj = { id, name, category };
+        let newServiceObj = { id, name, category, image };
         
         if (category === 'tecnica') {
             const isFoot = document.getElementById('tech-is-foot').checked;
@@ -1461,6 +1464,56 @@ function setupEventListeners() {
             e.target.classList.remove('active');
         }
     });
+
+    // Admin Subtab switching
+    const btnSubPrices = document.getElementById('btn-subtab-prices');
+    const btnSubAppointments = document.getElementById('btn-subtab-appointments');
+    const contentPrices = document.getElementById('subtab-content-prices');
+    const contentAppointments = document.getElementById('subtab-content-appointments');
+    
+    if (btnSubPrices && btnSubAppointments) {
+        btnSubPrices.addEventListener('click', () => {
+            btnSubPrices.classList.add('active');
+            btnSubPrices.style.color = 'var(--accent-pink-dark)';
+            btnSubPrices.style.borderBottom = '2px solid var(--accent-pink-dark)';
+            
+            btnSubAppointments.classList.remove('active');
+            btnSubAppointments.style.color = 'var(--text-light)';
+            btnSubAppointments.style.borderBottom = 'none';
+            
+            contentPrices.classList.remove('hidden');
+            contentAppointments.classList.add('hidden');
+        });
+        
+        btnSubAppointments.addEventListener('click', () => {
+            btnSubAppointments.classList.add('active');
+            btnSubAppointments.style.color = 'var(--accent-pink-dark)';
+            btnSubAppointments.style.borderBottom = '2px solid var(--accent-pink-dark)';
+            
+            btnSubPrices.classList.remove('active');
+            btnSubPrices.style.color = 'var(--text-light)';
+            btnSubPrices.style.borderBottom = 'none';
+            
+            contentPrices.classList.add('hidden');
+            contentAppointments.classList.remove('hidden');
+        });
+    }
+
+    // Check query string parameters to open specific tabs
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    if (tabParam === 'admin') {
+        const adminBtn = document.querySelector('.tab-button[data-tab="admin-tab"]');
+        if (adminBtn) adminBtn.click();
+        
+        const subtabParam = urlParams.get('subtab');
+        if (subtabParam === 'appointments') {
+            const apptsBtn = document.getElementById('btn-subtab-appointments');
+            if (apptsBtn) {
+                setTimeout(() => apptsBtn.click(), 10);
+            }
+        }
+    }
 }
 
 // Modal helper
