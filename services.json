@@ -1,0 +1,366 @@
+[
+  {
+    "id": "tecnica_acrilico",
+    "name": "Uñas Acrílicas",
+    "category": "tecnica",
+    "price": 0,
+    "useLength": true,
+    "isFoot": false,
+    "lengths": [
+      { "name": "Minis", "price": 250 },
+      { "name": "1-2 Cortas", "price": 280 },
+      { "name": "3-4 Media", "price": 300 },
+      { "name": "5-6 Larga", "price": 400 },
+      { "name": "7-8 Extra Larga", "price": 500 }
+    ]
+  },
+  {
+    "id": "tecnica_acrigel",
+    "name": "Acrigel",
+    "category": "tecnica",
+    "price": 0,
+    "useLength": true,
+    "isFoot": false,
+    "lengths": [
+      { "name": "Minis", "price": 220 },
+      { "name": "1-2 Cortas", "price": 250 },
+      { "name": "3-4 Media", "price": 280 }
+    ]
+  },
+  {
+    "id": "tecnica_gel_manos",
+    "name": "Gel Semipermanente (Manos)",
+    "category": "tecnica",
+    "price": 180,
+    "useLength": false,
+    "isFoot": false
+  },
+  {
+    "id": "tecnica_gel_pies",
+    "name": "Gel Semipermanente (Pies)",
+    "category": "tecnica",
+    "price": 220,
+    "useLength": false,
+    "isFoot": true
+  },
+  {
+    "id": "tecnica_rubber",
+    "name": "Rubber con nivelación",
+    "category": "tecnica",
+    "price": 300,
+    "useLength": false,
+    "isFoot": false
+  },
+  {
+    "id": "tecnica_bano_acrilico",
+    "name": "Baño de acrílico",
+    "category": "tecnica",
+    "price": 220,
+    "useLength": false,
+    "isFoot": false
+  },
+  {
+    "id": "tecnica_acripie",
+    "name": "Acripie",
+    "category": "tecnica",
+    "price": 150,
+    "useLength": false,
+    "isFoot": true
+  },
+  {
+    "id": "tecnica_pedicura",
+    "name": "Pedicura",
+    "category": "tecnica",
+    "price": 0,
+    "useLength": false,
+    "isFoot": true,
+    "subservices": [
+      { "name": "Pedicura Clásico", "price": 350 },
+      { "name": "Pedicura Jelly Spa", "price": 450 },
+      { "name": "Pedicura con Hilo", "price": 550 },
+      { "name": "Pedicura Pluss", "price": 600 }
+    ]
+  },
+  {
+    "id": "punta_cuadrada",
+    "name": "Cuadrada",
+    "category": "punta",
+    "price": 0
+  },
+  {
+    "id": "punta_coffin",
+    "name": "Coffin",
+    "category": "punta",
+    "price": 0
+  },
+  {
+    "id": "punta_ballerina",
+    "name": "Ballerina",
+    "category": "punta",
+    "price": 0
+  },
+  {
+    "id": "punta_almendra",
+    "name": "Almendra",
+    "category": "punta",
+    "price": 20
+  },
+  {
+    "id": "punta_stiletto",
+    "name": "Stiletto",
+    "category": "punta",
+    "price": 20
+  },
+  {
+    "id": "decoracion_frances_clasico",
+    "name": "Estilo Francés (Clásico)",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_frances_color",
+    "name": "Estilo Francés (Color)",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_espejo",
+    "name": "Efecto Espejo",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_aurora",
+    "name": "Efecto Aurora",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_perla",
+    "name": "Efecto Perla",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_camaleon",
+    "name": "Efecto Camaleón",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_unicornio",
+    "name": "Efecto Unicornio",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_cateye",
+    "name": "Efecto Cat Eye",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_glass",
+    "name": "Efecto Glass",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_babyboomer",
+    "name": "Baby Boomer",
+    "category": "decoracion",
+    "price": 15,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_carey",
+    "name": "Carey",
+    "category": "decoracion",
+    "price": 25,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_efecto_aura",
+    "name": "Efecto Aura",
+    "category": "decoracion",
+    "price": 20,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_marmol",
+    "name": "Mármol",
+    "category": "decoracion",
+    "price": 20,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_humo",
+    "name": "Efecto Humo",
+    "category": "decoracion",
+    "price": 20,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_blooming",
+    "name": "Efecto Blooming",
+    "category": "decoracion",
+    "price": 20,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_sweater",
+    "name": "Efecto Sweater",
+    "category": "decoracion",
+    "price": 20,
+    "isRange": false,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_relieves",
+    "name": "Relieves (Arte asiático)",
+    "category": "decoracion",
+    "price": 20,
+    "priceMin": 20,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_texturas",
+    "name": "Texturas (Arte asiático)",
+    "category": "decoracion",
+    "price": 20,
+    "priceMin": 20,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_gotas",
+    "name": "Gotas de agua (Arte asiático)",
+    "category": "decoracion",
+    "price": 20,
+    "priceMin": 20,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_anillos",
+    "name": "Anillos (Arte asiático)",
+    "category": "decoracion",
+    "price": 20,
+    "priceMin": 20,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_encapsulado",
+    "name": "Encapsulados",
+    "category": "decoracion",
+    "price": 15,
+    "priceMin": 15,
+    "priceMax": 35,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_mano_alzada",
+    "name": "Diseño a mano alzada",
+    "category": "decoracion",
+    "price": 10,
+    "priceMin": 10,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_cristales",
+    "name": "Cristales",
+    "category": "decoracion",
+    "price": 10,
+    "priceMin": 10,
+    "priceMax": 35,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_pedreria",
+    "name": "Decoración con pedrería",
+    "category": "decoracion",
+    "price": 10,
+    "priceMin": 10,
+    "priceMax": 35,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_3d_flores",
+    "name": "3D Flores",
+    "category": "decoracion",
+    "price": 30,
+    "priceMin": 30,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "decoracion_3d_figuras",
+    "name": "3D Figuras",
+    "category": "decoracion",
+    "price": 30,
+    "priceMin": 30,
+    "priceMax": 50,
+    "isRange": true,
+    "unit": "c/u"
+  },
+  {
+    "id": "retiro_gel_propio",
+    "name": "Retiro Gel (Propio)",
+    "category": "retiro",
+    "price": 50
+  },
+  {
+    "id": "retiro_gel_ajeno",
+    "name": "Retiro Gel (Ajeno)",
+    "category": "retiro",
+    "price": 60
+  },
+  {
+    "id": "retiro_acrilico_propio",
+    "name": "Retiro Acrílico (Propio)",
+    "category": "retiro",
+    "price": 100
+  },
+  {
+    "id": "retiro_acrilico_ajeno",
+    "name": "Retiro Acrílico (Ajeno)",
+    "category": "retiro",
+    "price": 120
+  }
+]
